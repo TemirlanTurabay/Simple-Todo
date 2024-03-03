@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    height: 84px;
+    margin-top: 100px;
+    margin-left: 80px;
+    gap: 24px;
+    position: absolute;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .header > div:first-child {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 38px;
+    color: black;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .header > div:last-child {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
   }
-}
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    width: 289px;
+    height: 40px;
+    margin-top: 286px;
+    margin-left: 80px;
+    gap: 16px;
+    position: absolute;
+  }
+  
+  .buttons > button {
+    width: 87px;
+    height: 40px;
+    border-radius: 100px;
+    padding: 8px 25px 8px 24px;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    border: 0;
+  }
+  
+  .modal_screen {
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    height: 234px;
+    margin-top: 60px;
+    margin-left: 980px;
+    border-radius: 12px;
+    padding: 16px;
+    gap: 10px;
+    background-color: #e3e6e7;
+    position: absolute;
+  }
+  
+  .modal_screen > div:first-child {
+    width: 236px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .modal_screen > input {
+    font-weight: 500;
+    font-size: 16px;
+    color: lightgrey;
+    width: 236px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .modal_screen > button {
+    width: 76px;
+    height: 40px;
+    border-radius: 100px;
+    padding: 8px 24px 8px 24px;
+    gap: 8px;
+    background-color: #081e34;
+    color: white;
+  }
+  
+  .pop_modal {
+    width: 52px;
+    height: 52px;
+    margin-top: 274px;
+    margin-left: 1308px;
+    border-radius: 100px;
+    padding: 14px;
+    gap: 8px;
+    background-color: black;
+    padding: 1px;
+    position: absolute;
+  }
+  
+  .pop_modal > img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .list_header {
+    width: 1280px;
+    height: 54px;
+    margin-top: 390px;
+    margin-left: 80px;
+    gap: 24px;
+    position: absolute;
+  }
+  
+  .list_header > h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: black;
+  }
+  
+  .list_header > div {
+    width: 1280px;
+    height: 2px;
+    opacity: 20%;
+    background-color: #151517;
+  }
+  
+  .todo_list {
+    display: flex;
+    flex-direction: column;
+    width: 654px;
+    height: 184px;
+    margin-top: 480px;
+    margin-left: 77px;
+    gap: 16px;
+    position: absolute;
+  }
+  
+  .todo_list > .todo {
+    width: 654px;
+    height: 24px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .todo_list > .todo > button {
+    width: 100px;
+    height: 24px;
+    border: 0;
+    background-color: lightgrey;
+    border-radius: 100px;
+    font-weight: 500;
+  }
+  
+  .todo_list > .todo > input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .todo_list > .todo > div {
+    width: 598px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+  }
+  
+  footer {
+    width: 1440px;
+    height: 102px;
+    margin-top: 898px;
+    border-radius: 32px 32px 0px 0px;
+    padding: 32px 80px 32px 80px;
+    gap: 32px;
+    position: absolute;
+  }
+  
+  footer > div {
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    height: 38px;
+    gap: 866px;
+  }
+  
+  footer > div > div:first-child {
+    width: 234px;
+    height: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  footer > div > div:last-child {
+    width: 180px;
+    height: 18px;
+    opacity: 50%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .activeButton {
+    background-color: grey;
+  }
+  
